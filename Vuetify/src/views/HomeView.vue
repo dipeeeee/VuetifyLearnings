@@ -22,7 +22,7 @@
 </script>
 
   <template>
-  <v-carousel :show-arrows="false">
+  <v-carousel hide-delimiters>
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
@@ -30,5 +30,8 @@
       cover
     ></v-carousel-item>
   </v-carousel>
+
+   <div class="text-center text-h4 mt-5">My First Vuetify Website</div>
+
 </template>
     

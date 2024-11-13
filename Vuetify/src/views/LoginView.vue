@@ -13,18 +13,19 @@ function submit(){
 
 </script>
 
+
 <template>
    
-    
+   
 
-<v-row justify="center">
+<v-row justify="center" class="mt-15">
     <v-col cols="4">
 
-    <v-card class="pa-4">
+    <v-card class="pa-4" >
     <v-card-title class="text-center"> Login Here </v-card-title>
     <v-card-item>
       <v-form @submit.prevent="submit">
-        <v-text-field variant="solo" 
+        <v-text-field  
          prepend-inner-icon="mdi-mail"
         v-model="form.email"
           label="Email"
@@ -43,17 +44,17 @@ function submit(){
        </v-checkbox>
 
         
-       <v-btn color='green-darken-1'type="submit" block class="mt-2"  >Submit</v-btn>
+       <v-btn color='green-darken-1' variant="elevated" type="submit" block  class="mt-2"  >Submit</v-btn>
        
        
        
 
       </v-form>
     </v-card-item>
-
+    
     <v-card-action>
         <div class="mx-4">
-        <v-btn block to="/register">Register</v-btn> 
+        <v-btn block  to="/register">Register</v-btn> 
         </div>
      </v-card-action>
 

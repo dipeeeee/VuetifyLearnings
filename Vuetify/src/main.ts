@@ -18,7 +18,14 @@ import '@mdi/font/css/materialdesignicons.css';
 
 const vuetify = createVuetify({
   components,
-  directives
+  directives,
+  defaults:{
+    VBtn:{variant:"outlined"},
+    VTextField:{variant:"solo"},
+  },
+  theme:{
+    defaultTheme:"dark",
+  }
 })
 
 
